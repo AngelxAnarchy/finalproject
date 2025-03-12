@@ -470,7 +470,11 @@ VALUES
     padding: 10px 10px;
     border-radius: 999px;
     background-color: #52e971;
-    color: #fff; 
+    color: #fff;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
 }
 
 .fa-briefcase {
@@ -479,3 +483,4 @@ VALUES
     background-color: #ff1515;
     color: #fff;
 }
+
