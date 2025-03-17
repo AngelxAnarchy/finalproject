@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/04fd729015.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="menu--open">
     <section id="landing">
         <nav>
             <div class="row nav__row">
@@ -24,14 +24,25 @@
                     <a class="nav__link" href="#blog">Blog</a>
                     <a class="nav__link" href="#pricing">Pricing</a>
                     <a class="nav__link" href="#contact">Contact Us</a>
-                    <a class="nav__link" href="#login">Login</a>
+                    <a class="nav__link login" href="#login">Login</a>
+                    <a class="nav__link nav__link--primary" href="#login">Sign Up</a>
                 </ul>
-                <button class="btn__menu">Sign Up</button>
+                <button class="btn__menu" onclick="openMenu()"></button>
             </div>
         </nav>
-        <div class="modal">
-            <button class="btn__menu btn__menu--close"></button>
+       <div class="modal">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="modal__links">
+            <a href="" class="modal__link">About</a>
+            <a href="" class="modal__link">Blog</a>
+            <a href="" class="modal__link">Pricing</a>
+            <a href="" class="modal__link">Contact Us</a>
+            <a href="" class="modal__link">Login</a>
+            <a href="" class="modal__link modal__link--primary">Sign Up</a>
         </div>
+       </div>
     </section>
 
     <header class="header">
